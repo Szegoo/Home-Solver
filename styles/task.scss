@@ -1,0 +1,31 @@
+.task-full {
+    margin: 0 20vw;
+    border-right: 1px solid $dark-green-color;
+    border-left: 1px solid $dark-green-color;
+    padding: 1em;
+    > * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    >h2 {
+        color: $orange-color;
+    }
+    > img {
+        max-width: 300px;
+    }
+    .background {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.568);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .full-image {
+        position: absolute;
+        top: 1em;
+        height: auto;
+        left: 20vw;
+        right: 20vw;
+        z-index: 1;
+    }
+}

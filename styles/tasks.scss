@@ -1,0 +1,42 @@
+.task-container {
+    padding: .5em 1.5em;
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form {
+        select{
+            width: min-content;
+        }
+        display: flex;
+        flex-direction: column;
+        > * {
+            margin-top: 1em;
+        }
+        > textarea, input {
+            margin-right: 40vw;
+            padding: .5em;
+        }
+        >button {
+            width: min-content;
+            padding: .3em 1em;
+            border: none;
+            color: white;
+            background-color: $pink-color;
+            cursor: pointer;
+        }
+    }
+    > .task {
+        border-bottom: 1px solid $dark-green-color;
+        >h3 {
+            color: $dark-green-color;
+            cursor: pointer;
+        }
+        >.field {
+            background-color: $orange-color;
+            width: min-content;
+            color: white;
+            padding: .2em .5em;
+            cursor: pointer;
+        }
+    }
+}

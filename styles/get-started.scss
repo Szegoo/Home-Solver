@@ -1,0 +1,45 @@
+@import "./variables.scss";
+.plan-container {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        color: $orange-color;
+    }
+    .flex-box {
+        display: flex;
+        > .plan {
+            flex: 2;
+            margin: 2em;
+            box-shadow: 0px 0px 0px 1px;
+            padding: .2em;
+            >h3 {
+                font-size: 26px;
+            }
+            >* {
+                padding: 0 .5em;
+            }
+            >button {
+                padding: .5em 1.5em;
+                border: none;
+                display: block;
+                background-color: $orange-color;
+                color: white;
+                margin: 1em;
+                cursor: pointer;
+            }
+            >#professional-btn {
+                background-color: $blue-color;
+            }
+            >span {
+                font-size: 20px;
+                color: $pink-color;
+            }
+        }
+        > .white-space {
+            flex: 1;
+        }
+    }
+}
